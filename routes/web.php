@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,9 @@ Route::get('/', function () {
 // Route::get('/chatify', function(){
 //     return view('');
 // });
+
+Route::resource('/findusers', UsersController::class);
+Route::resource('/search', UsersController::class);
 
 Route::middleware([
     'auth:sanctum',
