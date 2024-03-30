@@ -12,11 +12,11 @@ class UsersController extends Controller
      */
     public function index(Request $request)
     {
-        $name=User::all();
-        //dd($name);
-        $search=$request->search;
-        $name = User::where('name', 'like', '%' . $request->name . '%')->get();
-        return view('users.findusers',  compact('search','name'));
+        // $name=User::all();
+        // dd($name);
+        // $search=$request->search;
+        // $name = User::where('name', 'like', '%' . $request->name . '%')->get();
+        // return view('users.findusers',  compact('search','name'));
     }
 
     // public function search(Request $request)

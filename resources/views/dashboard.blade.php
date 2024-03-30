@@ -12,6 +12,7 @@
         </a>
         </h5>
         </div>
+        @livewire('search')
     </x-slot>
 
     
